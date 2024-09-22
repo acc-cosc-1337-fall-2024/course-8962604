@@ -1,10 +1,6 @@
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include "src/homework/03_decisions_tests.cpp/decisions.h"
+#include "decisions.h"
 #include <cassert>
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
 int main() {
     // Test cases for get_letter_grade_using_if
     assert(get_letter_grade_using_if(95) == "A");
@@ -21,5 +17,4 @@ int main() {
     assert(get_letter_grade_using_switch(50) == "F");
 
     return 0;
-
 }
