@@ -13,13 +13,12 @@ void display_hello_for(int num)
 int sum_of_squares_for(int num)
 {
  auto total = 0;
-
-
- for(auto i = 0; i <= num; i++)
+         
+for( auto i = 0;)
  {
-   total += i * i;
-
+   total += num * num;
  }
+
  return total;
 }
 
