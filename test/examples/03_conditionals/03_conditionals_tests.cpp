@@ -4,10 +4,36 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
-TEST_CASE("Test and truth table")
+TEST_CASE("Test and truth table"){
+	REQUIRE(false ==(true && false));
+	REQUIRE(false == (true && false));
+	REQUIRE(false == (false && false));
+	REQUIRE(true == (true && true));
+}
+TEST_CASE("Test or truth table"){
+	REQUIRE(true == (true || false));
+	REQUIRE(true == (true || false));
+	REQUIRE(false == (false || false));
+	REQUIRE(true == (true || true));
+}
+TEST_CASE("Test not truth table"){
+	REQUIRE(true == !false;);
+	REQUIRE(false == !true);
 
-REQUIRE("TRUE == TRUE or False");
-REQUIRE("TRUE == FALSE or True");
-REQUIRE("FALSE == TRUE or True");
-REQUIRE("FALSE == FALSE or True");
+}
+TEST_CASE("Determine if a letter is a consonant"){
+	REQUIRE(false == is_consonant('a'));
+	REQUIRE(true == is_consonant('b'));
+	REQUIRE(true == is_consonant('c'));
+	REQUIRE(true == is_consonant('f'));
+	REQUIRE(false == is_consonant('u'));
+	REQUIRE(true == is_consonant('z'));
+}
+TEST_CASE("test is number even"){
+	REQUIRE(true == is_even(2));
+	REQUIRE(false == is_even(3));
+	REQUIRE(true == is_even(4));
+	REQUIRE(true == is_even(100));
+	REQUIRE(false == is_even(101));
+}
 
