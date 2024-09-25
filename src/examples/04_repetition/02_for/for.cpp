@@ -14,10 +14,9 @@ int sum_of_squares_for(int num)
 {
  auto total = 0;
          
-for( auto i = 0;)
- {
+for(auto i = 0)
+
    total += num * num;
- }
 
  return total;
 }
