@@ -16,5 +16,30 @@ void prompt_user()
   }while (choice == 'Y' || choice =='y');
 
 }
+void display_menu()
+{
+  cout<<"1 option 1";
+  cout<<"2 option 2";
+  cout<<"3 exit";
+}
+void run_menu()
+    auto option = 0;
+do
+{
+    display_menu();
+    cout<<"Enter a menu option";
+    cin>>option;
+
+}
+void handle_user_option(int num)
+switch(num)
+
+{
+
+
+
+
+
+}
 
 
