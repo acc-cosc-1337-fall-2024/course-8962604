@@ -4,12 +4,10 @@
 
 
 //write namespace using statement for cout
-using std::cout, using std::cin
-
+using namespace std;
+using std::cout; using std::cin
 int main()
-
 {
-
 	int num;
 	cout<<"Enter a number;";
 	cin>>num,
@@ -26,4 +24,3 @@ int main()
 
     return 0;
 }
-
