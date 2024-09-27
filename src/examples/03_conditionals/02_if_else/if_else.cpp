@@ -23,7 +23,7 @@ string get_generation(int year)
     {
        generation = "Generation X";
     }
-    else if (year >= 1980 &7 year <= 1994)
+    else if (year >= 1980 && year <= 1994)
     {
        generation = "Generation Y";
     }
