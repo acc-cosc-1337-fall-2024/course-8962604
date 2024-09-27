@@ -11,3 +11,9 @@ void run_menu();
 
 void handle_user_option(int num);
 
+int echo_number(int num);
+
+int get_ascii_value(char letter);
+
+void while_nestted_loop(int num1, int num2);
+

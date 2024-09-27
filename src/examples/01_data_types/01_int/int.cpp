@@ -13,7 +13,7 @@ int add_numbers(int num1, int num2)
 {
    int result = num1 + num2;
 
-   return result
+   return result;
 }
 int divide_numbers(double num1, double num2)
 {

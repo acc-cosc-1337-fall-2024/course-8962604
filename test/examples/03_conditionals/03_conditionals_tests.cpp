@@ -36,4 +36,3 @@ TEST_CASE("test is number even"){
 	REQUIRE(true == is_even(100));
 	REQUIRE(false == is_even(101));
 }
-
