@@ -3,4 +3,3 @@
 bool_is_vowel(char letter);
 bool_is_consonant(char letter);
 bool_is_even(int num);
-

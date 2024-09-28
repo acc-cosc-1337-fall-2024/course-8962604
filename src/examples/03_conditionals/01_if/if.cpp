@@ -1,6 +1,6 @@
 //write include statement for if header
 # include<iostream>
-#include "if.h"
+# include "if.h"
 
 
 
