@@ -1,6 +1,6 @@
 #include "for.h"
 
-using std::cout;
+using std::cout; using std:cin;
 
 void display_hello_for(int num)
 {
@@ -14,10 +14,10 @@ int sum_of_squares_for(int num)
 {
  auto total = 0;
          
-for(auto i = 0)
-
+for(auto i = 0, i <= num, i++)
+{
    total += num * num;
-
+}
  return total;
 }
 

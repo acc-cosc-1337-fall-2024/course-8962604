@@ -29,7 +29,15 @@ string get_generation(int year)
     }
     else if(year >= 1995 && year <= 2012)
     {
-        generation = "Generation Z";
+       generation = "Generation Z";
+    }
+    else if (year >= 2013 && year <= 2025)
+    {
+       generation = "Generation Alpha";
+    }
+    else
+    {
+       generation = "Invalid Year";
     }
     return generation;
 

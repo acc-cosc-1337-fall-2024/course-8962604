@@ -1,8 +1,8 @@
 #include <iostream>
-#include<limits.h>
+#include <limits.h>
 
 
-suing std::cout, using std::cin;
+using std::cout; using std::cin;
 
 int main()
 {

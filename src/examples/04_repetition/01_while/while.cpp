@@ -1,9 +1,9 @@
 #include <iostream>
 #include "while.h"
 
-using std::cout; using std::cin;
+using std::cout; 
 
-void display_hello(int num);
+void display_hello(int num)
 {
   while(num > 0)
   {

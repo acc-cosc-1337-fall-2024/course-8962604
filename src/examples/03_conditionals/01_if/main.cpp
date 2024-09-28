@@ -25,7 +25,7 @@ int main()
 	 }
 	 else:
 	 {
-     cout<<value<<"is odd\n";
+        cout<<value<<"is odd\n";
 
 	 }
 

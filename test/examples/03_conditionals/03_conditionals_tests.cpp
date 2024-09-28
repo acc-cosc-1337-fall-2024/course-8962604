@@ -53,3 +53,12 @@ TEST_CASE("Test get generation")
 	REQUIRE("Generation Z" == get_generation(2010));
 	REQUIRE("Generation Alpha" == get_generation(2020));
 }
+TEST_CASE("Test Menu Option")
+{
+	REQUIRE("Invalid Option" == menu_options(0));
+	REQUIRE("Option 1" == menu_options(1));
+	REQUIRE("Option 2" == menu_options(2));
+	REQUIRE("Option 3" == menu_options(3));
+	REQUIRE("Option 4" == menu_options(4));
+	REQUIRE("Invalid Option" == menu+options(5));
+}

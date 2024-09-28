@@ -11,24 +11,30 @@
 
 using std::string;
 
-enum menu_options(customers=1, payables, receivables, exit);
+enum menu_options {customers, payables, receivables, exit};
 
 string menu_options(int num)
 {
  string option = "";
- switch(num)
+ switch (num)
  {
 case customers:// if or if else 
    option = "option 1";
-   break,
+   break;
 case payables:
    option = "option 2";
-   break,
+   break;
 case receivables:
    option = "option 3";
-   break,
+   break;
+case exit:
+   option = "Option 4";
+   break;
+default:
+   option = "Invalid Option";
+   break;
  }
-
+return 0;
 }
 
 
