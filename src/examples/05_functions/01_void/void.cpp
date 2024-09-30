@@ -2,7 +2,7 @@
 
 using std::string;
 
-void void display_string_characters(const string str)
+void display_string_characters(const std::string str)
 {
     for (auto i=0; i < str.size(); i++)
     {
@@ -12,5 +12,18 @@ void void display_string_characters(const string str)
     }
 
 
+
+}
+void replace_character_in_string(std::string str, char target, char replace_value)
+{
+   for(auto i=0; i < str.size(); i++)
+   {
+        if(str[i] == target)
+        {
+            str[i] = replace_value;
+        }
+   } 
+
+   cout<<str<<"\n";
 
 }

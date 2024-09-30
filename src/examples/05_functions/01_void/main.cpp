@@ -4,6 +4,7 @@ using std::string;
 int main()
 {
     string lang = "Python";
-    display_string_characters(string);
+    replace_character_in_string(lang, 'P', 'p');
+
     return 0;
 }
