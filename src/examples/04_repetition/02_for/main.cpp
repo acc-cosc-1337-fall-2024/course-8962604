@@ -2,7 +2,7 @@
 
 int main() 
 {
-	 display_hello_for(3);
+	for_multiplication(3,3);
 
 	return 0;
 }

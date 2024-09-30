@@ -34,4 +34,28 @@ RESULT:
 5
 
 */
+void nested_for_loop()
+{
+ auto const NUM = 3;
 
+ for(auto i=0, i < NUM; i++)
+ {
+   cout<<"Outer loop\n";
+   for(auto j=0, j < NUM; j++)
+   {
+      cout<<"\tInner loop\n";
+   }
+   }
+}
+void for_multiplication(const int rows, const int cols)
+{
+  for(auto i=0; i < rows; i++)
+  {
+      for (auto j=0; j < cols; j++)
+      {
+         cout<<setw(4)<<(i + i) * (j + j);
+      }
+      cout<<"\n";
+  }
+
+}
