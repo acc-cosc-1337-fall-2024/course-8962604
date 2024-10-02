@@ -4,3 +4,11 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
+TEST_CASE("Verify ref_param", "reference values")
+{
+	int num = 5;
+	ref_param(num);
+
+	REQUIRE(num == 10);
+
+}
