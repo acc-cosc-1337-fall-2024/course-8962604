@@ -5,7 +5,7 @@ using std::cout;
 int main()
 {
     int num = 5;
-    int &num_ref = num; //work with the memory ddress of num
+    int &num_ref = num; //work with the memory address of num
 
     cout<<"num ref_value: "<<num_ref<<"\n";
     num_ref = 10;
