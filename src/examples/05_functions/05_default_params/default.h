@@ -1,0 +1,1 @@
+double get_total(int qty, double price = 10);
