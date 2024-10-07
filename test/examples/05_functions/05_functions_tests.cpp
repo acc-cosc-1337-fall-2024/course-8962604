@@ -20,7 +20,7 @@ TEST_CASE("Test default params")
 	REQUIRE(50 == get_total());
 
 }
-TEST_CASE("Test three default params")
+TEST_CASE("Test three default params(3)")
 {
 	 REQUIRE(2100 == get_total1());
      REQUIRE(2100 == get_total1(200.0));//overrides first parameter 
