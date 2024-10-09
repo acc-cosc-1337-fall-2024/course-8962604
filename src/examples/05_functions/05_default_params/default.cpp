@@ -10,3 +10,17 @@ double get_total1(int qty = 5, double price = 10, double bonus = 100)
    return qty * price + bonus
 
 }
+double get_gross_pay(int hours, double rate)
+{
+    return hours * rate;
+}
+double get_gross_pay(int hours, double rate, double bonus)
+{
+    return hours * rate + bonus;
+}
+double get_gross_pay(double yearly_pay)
+{
+
+    return yearly_pay / 25;
+
+}
