@@ -5,7 +5,7 @@ using std::cout; using std::cin;
 int main() 
 {
     auto value = 0;
-	cout<<"Enetr a number: ";
+	cout<<"Enter a number: ";
 	cin>>value;
 
 	auto result = sum_of_squares(value);
