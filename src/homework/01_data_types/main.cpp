@@ -4,8 +4,6 @@
 
 
 //write namespace using statement for cout
-using namespace std;
-using std::cout; using std::cin
 int main()
 {
 
