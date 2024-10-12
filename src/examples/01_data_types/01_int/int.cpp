@@ -21,5 +21,5 @@ int divide_numbers(double num1, double num2)
 }
 double calculate_interest(double rate, int amount)
 {
-  
+    return rate * amount;
 }
