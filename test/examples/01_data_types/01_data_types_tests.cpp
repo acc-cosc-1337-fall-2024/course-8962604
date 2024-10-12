@@ -13,7 +13,10 @@ TEST_CASE("Verify echo variable function", "should return the parameter value") 
 	REQUIRE(100 == echo_variable(100));
 	REQUIRE(0 == echo_variable(0));
 }
-
+TEST_CASE("Test add numbers", "should add two numbers"){
+	REQUIRE(10 == add_numbers(7,3));
+	REQUIRE(20 == add_numbers(10,10));
+}
 /*test case add_to_double_1 with 0 as parameter*/
 
 /*test case add_to_double_1 with 1 as parameter*/
