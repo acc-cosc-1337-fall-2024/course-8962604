@@ -6,5 +6,5 @@ double paramter (radius)
 */
 double calculate_interest_rate(int amount)
 {
-   return amount * INTEREST_RATE;
+   INTEREST_RATE = 0.05999;
 }
