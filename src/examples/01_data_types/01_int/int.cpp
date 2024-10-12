@@ -23,3 +23,7 @@ double calculate_interest(double rate, int amount)
 {
     return rate * amount;
 }
+int return_ascii_value(char ch)
+{
+  return ch;
+}

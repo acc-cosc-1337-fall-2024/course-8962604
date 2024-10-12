@@ -17,6 +17,12 @@ TEST_CASE("Test add numbers", "should add two numbers"){
 	REQUIRE(10 == add_numbers(7, 3));
 	REQUIRE(20 == add_numbers(10, 10));
 }
+TEST_CASE("Return int with double variable", "decimals ignored"){
+	REQUIRE(9 == divide_numbers(100.1, 10.5));
+}
+TEST_CASE("Multiply int * double", "returns int or double "){
+	REQUIRE(1.5 == calculate_interest(.15, 10));
+}
 /*test case add_to_double_1 with 0 as parameter*/
 
 /*test case add_to_double_1 with 1 as parameter*/
@@ -26,6 +32,11 @@ TEST_CASE("Test add numbers", "should add two numbers"){
 /*test case add_to_double_2 with 1 as parameter*/
 
 /*test case char test ASCII values */
+TEST_CASE("return ch at int", "ascii value")
+{
+  REQUIRE(65 == return_ascii_value('A'));
+  REQUIRE(97 == return_ascii_value('a'));
+}
 
 /*test case string test ASCII values Joe characters are equal to 74, 111, and 101*/
 
