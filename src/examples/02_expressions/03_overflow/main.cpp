@@ -4,7 +4,7 @@
 
 using std::cout; using std::cin;
 
-int main()
+int main() //undeflow
 {
     int max_int = INT_MAX;
     // Add 1 to max_int
@@ -13,5 +13,8 @@ int main()
     max_int += 1;
     cout<<"Value of max_int" << max_int;
     
+    // overflow
+    float floatVar = 3.0E47;
+    cout<<"Vlaue of floatvar: "<<floatVar<<"\n";
     return 0;
 }

@@ -38,6 +38,10 @@ TEST_CASE("return ch at int", "ascii value")
   REQUIRE(65 == return_ascii_value('A'));
   REQUIRE(97 == return_ascii_value('a'));
 }
+TEST_CASE("Verify that avg books sold", "return a (double) decimal value")
+{
+	REQUIRE(22.1  == avg_books_sold_monthly(221, 10));
+}
 
 /*test case string test ASCII values Joe characters are equal to 74, 111, and 101*/
 
