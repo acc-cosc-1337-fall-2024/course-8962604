@@ -1,4 +1,5 @@
-# include "cosntants.h"
+# include "constants.h"
+
 const double INTEREST_RATE = .059;//read only
 
 /*
