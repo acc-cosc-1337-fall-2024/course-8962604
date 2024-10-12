@@ -9,5 +9,6 @@ Create const double PI with 3.14159
 */
 double calculate_interest_rate(int amount)
 {
-    return amount * INTEREST_RATE;
+    INTEREST_RATE = .055999;
+    return 0;
 }
