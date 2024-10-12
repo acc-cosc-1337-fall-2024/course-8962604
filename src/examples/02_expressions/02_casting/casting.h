@@ -2,7 +2,7 @@
 Write double value-return function convert_to_double with an int years and
 double interest_rate parameter
 */
-double avg_books_sold_monthly(int books, int months);
+double avg_books_sold_daily(int books, int months);
 
 
 /*
