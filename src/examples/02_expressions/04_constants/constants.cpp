@@ -5,4 +5,7 @@ Create const double PI with 3.14159
 @param double radius-radius of circle
 @return the area of a circle
 */
-
+double calculate_interest_rate(int amount)
+{
+    return amount * INTEREST_RATE;
+}
