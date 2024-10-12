@@ -1,3 +1,4 @@
+# include "cosntants.h"
 const double INTEREST_RATE = .059;//read only
 
 /*
@@ -6,6 +7,6 @@ double paramter (radius)
 */
 double calculate_interest_rate(int amount)
 {
-    INTEREST_RATE = .0559999;
+    INTEREST_RATE = .055999;
     return 0;
 }
