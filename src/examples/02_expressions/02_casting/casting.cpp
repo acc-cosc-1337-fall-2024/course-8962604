@@ -1,4 +1,8 @@
-
+# include "casting.h"
+double avg_books_sold_monthly(int books, int months)
+{
+    return static_cast<double>(books) / months;
+}
 /*
 Function convert_int_to_double multiplies years times interest_rate
 

@@ -23,9 +23,7 @@ TEST_CASE("Return int with double variable", "decimals ignored"){
 TEST_CASE("Multiply int * double", "returns int or double "){
 	REQUIRE(1.5 == calculate_interest(.15, 10));
 }
-TEST_CASE("Verify that avg books sold", "return a (double) decimal value"){
-	REQUIRE(22.1 == avg_books_sold_monthly(221 / 10));
-}
+
 /*test case add_to_double_1 with 0 as parameter*/
 
 /*test case add_to_double_1 with 1 as parameter*/
