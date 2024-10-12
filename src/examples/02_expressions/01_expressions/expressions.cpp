@@ -45,7 +45,7 @@ int num2 = 5;
 int product = num1 * num2;
 return product;
 }
-double avg_books_sold_monthly( int books, int months)
+double avg_books_sold_monthly(int books, int months)
 {
     return static_cast<double>(books) / months;
 }

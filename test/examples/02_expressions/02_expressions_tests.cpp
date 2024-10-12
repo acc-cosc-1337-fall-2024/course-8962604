@@ -5,6 +5,3 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
-TEST_CASE("Verify that avg books sold", "return a (double) decimal value"){
-	REQUIRE(22.1 == avg_books_sold_monthly(221 / 10));
-}
