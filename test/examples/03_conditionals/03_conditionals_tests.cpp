@@ -57,3 +57,16 @@ TEST_CASE("Determine if a letter is a vowel")
   REQUIRE(true == is_vowel(letter));
 }
 
+TEST_CASE("Test case generation")
+{
+	REQUIRE("Invalid Year" == get_generation(1800));
+	REQUIRE("The Greatest generation" == get_generation(1915));
+	REQUIRE("The Silent Generation" == get_generation(1930));
+	REQUIRE("The Baby boomer Generation" == get_generation(1960));
+	REQUIRE("Generation X" == get_generation(1971));
+	REQUIRE("Generation Y" == get_generation(1990));
+	REQUIRE("Generation Z" == get_generation(2010));
+	REQUIRE("Generation Alpha" == get_generation(2020));
+	REQUIRE("Invalid Year" == get_generation(2030));
+
+}
