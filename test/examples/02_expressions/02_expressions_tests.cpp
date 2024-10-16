@@ -13,5 +13,5 @@ TEST_CASE("Verify that constant books sold", "return a (double) decimal value")
 }
 TEST_CASE("Test interst rate")
 {
-	REQUIRE(5.9 == calculate_interest_rate(100));
+	REQUIRE(5.9 == calculate_tax_rate(100));
 }

@@ -6,3 +6,10 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
+TEST_CASE("Test and Truth Table")
+{
+	REQUIRE(false == (false && false));
+	REQUIRE(false == (false && true));
+	REQUIRE(false == (true && false));
+	REQUIRE(true == (true && true));
+}

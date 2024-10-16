@@ -7,7 +7,7 @@ int main()
     cout<<"Type a number: ";
     cin>>value;
 
-    double result = calculate_interest_rate(value);
+    double result = calculate_tax_rate(value);
     cout<<result<<"\n";
 
     return 0;
