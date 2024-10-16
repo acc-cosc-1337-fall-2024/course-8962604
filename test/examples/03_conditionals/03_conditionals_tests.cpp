@@ -70,3 +70,12 @@ TEST_CASE("Test case generation")
 	REQUIRE("Invalid Year" == get_generation(2030));
 
 }
+TEST_CASE("Test menu options")
+{
+   REQUIRE("Option 1" == menu_options(0));
+   REQUIRE("Option 1" == menu_options(1));
+   REQUIRE("Option 2" == menu_options(2));
+   REQUIRE("Option 3" == menu_options(3));
+   REQUIRE("Option 4" == menu_options(4));
+   REQUIRE("Invalid option" == menu_options(5));
+}
