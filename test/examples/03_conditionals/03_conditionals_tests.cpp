@@ -13,3 +13,25 @@ TEST_CASE("Test and Truth Table")
 	REQUIRE(false == (true && false));
 	REQUIRE(true == (true && true));
 }
+TEST_CASE("Test or truth table")
+{
+	REQUIRE(false == (false || false));
+	REQUIRE(true == (false || true));
+	REQUIRE(true == (true || false));
+	REQUIRE(true == (true || true));
+	
+}
+TEST_CASE("Test not truth table")
+{
+	REQUIRE(true == !false);
+	REQUIRE(false == !true);
+}
+TEST_CASE("Test is number even")
+{
+	REQUIRE(true == is_even(2));
+	REQUIRE(false == is_even(3));
+	REQUIRE(true == is_even(4));
+	REQUIRE(true == is_even(100));
+	REQUIRE(false == is_even(101));
+}
+
