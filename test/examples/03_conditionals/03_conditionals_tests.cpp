@@ -26,6 +26,23 @@ TEST_CASE("Test not truth table")
 	REQUIRE(true == !false);
 	REQUIRE(false == !true);
 }
+TEST_CASE("Determine is a letter is a vowel")
+{
+	REQUIRE(true == is_vowel('a'));
+	REQUIRE(true == is_vowel('e'));
+	REQUIRE(true == is_vowel('i'));
+	REQUIRE(true == is_vowel('o'));
+	REQUIRE(true == is_vowel('u'));
+	
+}
+TEST_CASE("Determine if a letter is a consonant")
+{
+	REQUIRE(false == is_consonant('a'));
+	REQUIRE(true == is_consonant('b'));
+	REQUIRE(true == is_consonant('c'));
+	REQUIRE(false == is_consonant('o'));
+	REQUIRE(false == is_consonant('e'));
+}
 TEST_CASE("Test is number even")
 {
 	REQUIRE(true == is_even(2));
@@ -33,5 +50,10 @@ TEST_CASE("Test is number even")
 	REQUIRE(true == is_even(4));
 	REQUIRE(true == is_even(100));
 	REQUIRE(false == is_even(101));
+}
+TEST_CASE("Determine if a letter is a vowel")
+{
+  char letter = 'i';
+  REQUIRE(true == is_vowel(letter));
 }
 
