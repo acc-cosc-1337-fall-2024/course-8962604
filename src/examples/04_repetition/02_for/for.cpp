@@ -7,7 +7,7 @@ void display_hello_for(int num)
         cout<<"Hello\n";
     }
 }
-int sum_of_squares(int num)
+int sum_of_squares_for(int num)
 {
     auto total = 0;
 
