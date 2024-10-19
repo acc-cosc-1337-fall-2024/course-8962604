@@ -4,3 +4,10 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
+TEST_CASE("Verify sum of squares")
+{
+	REQUIRE(14 == sum_of_squares(3));
+	REQUIRE(30 == sum_of_sqaures(4));
+	REQUIRE(55 == sum_of_sqaures(5));
+
+}
