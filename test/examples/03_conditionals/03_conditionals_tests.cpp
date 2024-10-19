@@ -72,7 +72,7 @@ TEST_CASE("Test case generation")
 }
 TEST_CASE("Test menu options")
 {
-   REQUIRE("Option 1" == menu_options(0));
+   REQUIRE("Invalid Option" == menu_options(0));
    REQUIRE("Option 1" == menu_options(1));
    REQUIRE("Option 2" == menu_options(2));
    REQUIRE("Option 3" == menu_options(3));

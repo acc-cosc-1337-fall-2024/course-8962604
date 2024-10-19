@@ -9,22 +9,26 @@
 //returns 'Option 4' when value 4
 //return 'Invalid Option' otherwise
 using std::string;
+
+enum menu_option {customers = 1, payables, receivables, exit};
+
 std::string menu_options(int num)
+
 {
     string option = "";
     switch (num)
 
     {
-        case 1: //if or if else
+        case customers: //if or if else
         option = "option 1";
         break;
-        case 2: 
+        case payables: 
         option = "option 2";
         break;
-        case 3:
+        case receivables:
         option = "option 3";
         break;
-        case 4:
+        case exit:
         option = "option 4";
         break;
         default: // if else
