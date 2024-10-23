@@ -12,3 +12,8 @@ TEST_CASE("Verify ref param", "reference values")
 	ref_param(num);
 	REQUIRE(num == 10);
 }
+TEST_CASE("Test default params")
+{
+	REQUIRE(20 == get_total(2));
+	REQUIRE(50 == get_total());
+}
