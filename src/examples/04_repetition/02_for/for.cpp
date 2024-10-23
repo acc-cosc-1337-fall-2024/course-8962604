@@ -32,7 +32,7 @@ RESULT:
 */
 void nested_for_loop()
 {
-    auto const NUM = 0;
+    auto const NUM = 3;
     for (auto i=0; i < NUM, i++);
     {
         cout<<"Outer loop\n";
@@ -41,4 +41,8 @@ void nested_for_loop()
             cout<<"\tInner Loop\n";
         }
     }
+}
+void for_multiplication(const int rows, const int cols)
+{
+    
 }
