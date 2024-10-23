@@ -4,7 +4,7 @@ using std::vector;
 using std::cout;
 
 
-void vector_while_w_while()
+void loop_vector_w_while()
 {
     vector<int> nums{8, 6, 10};
     auto index = 0;
@@ -12,6 +12,19 @@ void vector_while_w_while()
 
     while(index < nums.size())
     {
-        cout<<nums[index]<,"\n";   
+        cout<<nums[index]<,"\n"; 
+        index++;  
     }
+}
+void loop_vector_w_for()
+{
+    vector<int> nums{8, 6, 10};
+    for(long unsigned i = 0; i < nums.size(); i++);
+    {
+        cout<<nums[i]<,"\n";
+    }
+}
+void loop_vector_w_for_range()
+{
+    
 }
