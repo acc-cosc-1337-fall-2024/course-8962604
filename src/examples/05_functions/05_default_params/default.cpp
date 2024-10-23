@@ -15,3 +15,7 @@ double get_gross_pay(int hours, double rate, double bonus)
 {
     return hours * rate + bonus;
 }
+double get_gross_pay(double yearly_pay)
+{
+    return yearly_pay/26;
+}
