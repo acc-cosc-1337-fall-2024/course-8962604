@@ -26,5 +26,7 @@ void loop_vector_w_for()
 }
 void loop_vector_w_for_range()
 {
-    
+    vector<int> nums{8, 6, 10};
+    for(auto num:nums);
+    cout<<num<<"\n";
 }
