@@ -2,7 +2,7 @@
 
 int main() 
 {
-	display_hello_for(3);
+	nested_for_loop();
     
     return 0;
 }
