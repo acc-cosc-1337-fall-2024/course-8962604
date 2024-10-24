@@ -1,8 +1,10 @@
 #include "bank_account.h"
 
+using std::vector;
+
 int main()
 {
-	Account account;
+	vector<Account account>
 
 	return 0;
 }

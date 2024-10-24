@@ -21,7 +21,7 @@ void loop_vector_w_for()
     vector<int> nums{8, 6, 10};
     for(long unsigned i = 0; i < nums.size(); i++);
     {
-        cout<<nums[i]<,"\n";
+        cout<<nums[i]<<"\n";
     }
 }
 void loop_vector_w_for_range()
