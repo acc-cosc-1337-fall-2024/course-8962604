@@ -2,24 +2,31 @@
 #ifndef TIC_TAC_TOE_H
 #define TIC_TAC_TOE_H
 
-#include <iostream>
 #include <vector>
 #include <string>
 
 class TicTacToe {
 public:
-    bool game_over();
-    void start_game(std::string first_player);
+    TicTacToe();
+    void start_game(const std::string& first_player);
     void mark_board(int position);
+    bool game_over() const;
+    std::string get_winner() const;
     std::string get_player() const;
     void display_board() const;
 
 private:
     void set_next_player();
-    bool check_board_full();
     void clear_board();
-    std::string player;
-    std::vector<std::string> pegs = std::vector<std::string>(9, " ");
+    bool check_board_full() const;
+    bool check_row_win() const;
+    bool check_column_win() const;
+    bool check_diagonal_win() const;
+    void set_winner();
+
+    std::string player; // Current player: X or O
+    std::vector<std::string> pegs; // TicTacToe board
+    std::string winner; // Winner of the game: X, O or C (for a tie)
 };
 
-#endif
+#endif // TIC_TAC_TOE_H

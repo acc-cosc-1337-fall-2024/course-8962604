@@ -39,3 +39,14 @@ TEST_CASE("Verify invalid move handling") {
     game.mark_board(1); // Invalid move on the same spot
     REQUIRE(game.get_player() == "O"); // Still O's turn
 }
+TEST_CASE("Test win by first column") {
+    TicTacToe game;
+    game.start_game("X");
+    game.mark_board(1);
+    game.mark_board(2); // O's move
+    game.mark_board(4);
+    game.mark_board(5); // O's move
+    game.mark_board(7);
+    REQUIRE(game.game_over() == true);
+    REQUIRE(game.get_winner() == "X");
+}
