@@ -13,3 +13,10 @@ void Account::deposit(int amount)
         balance += amount;
     }
 }
+void Account::withdraw(int amount)
+{
+    if (amount > 0 && amount <= balance)
+    {
+        balance -= amount;
+    }
+}
