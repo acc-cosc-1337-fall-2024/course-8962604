@@ -4,7 +4,7 @@
 #include<iostream>
 #ifndef ATM_H
 #define ATM_H
-Class ATM
+class ATM
 {
 public:
 ATM(Account a): account(a){/*empty code block*/}
