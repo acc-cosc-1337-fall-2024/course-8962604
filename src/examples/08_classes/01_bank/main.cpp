@@ -1,17 +1,30 @@
 #include "bank_account.h"
+#include<vector>
 
 using std::cin; using std::cout;
+using std::vector;
 
 int main()
 
 {
+	vector<Account> accounts;
 	auto balance = 0;
 	cout<<"Enter an amount: ";
 	cin>>balance;
 
-	Account account(balance); // represents a customer account
-
+	Account account1(balance); // represents a customer account
+	accounts.push_back(account1);
+	cout<<"Enter an amount: ";
+	cin>>balance;
+	
+	Account account2(balance); // represents a customer account
+	accounts.push_back(account2);
+	cout<<"Enter an amount: ";
+	cin>>balance;
+	
+	for (auto account: accounts)
+	{
 	cout<<account.get_balance()<<"\n";
-
+	}
 	return 0;
 }
