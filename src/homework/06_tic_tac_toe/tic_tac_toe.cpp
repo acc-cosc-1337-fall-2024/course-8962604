@@ -58,7 +58,6 @@ bool TicTacToe::check_board_full() const {
     return true; // No empty spots found
 }
 
-
 bool TicTacToe::check_row_win() const {
     for (int i = 0; i < 3; ++i) {
         if (pegs[i * 3] == player && pegs[i * 3 + 1] == player && pegs[i * 3 + 2] == player) {
@@ -84,4 +83,20 @@ bool TicTacToe::check_diagonal_win() const {
 
 void TicTacToe::set_winner() {
     winner = player;
+}
+
+// Corrected operator<< definition (keep only one)
+std::ostream& operator<<(std::ostream& os, const TicTacToe& game) {
+    // Output the TicTacToe board from pegs vector
+    for (int i = 0; i < 3; ++i) {
+        os << game.pegs[i * 3] << " | " << game.pegs[i * 3 + 1] << " | " << game.pegs[i * 3 + 2] << "\n";
+        if (i < 2) os << "---------\n";
+    }
+    return os;
+}
+
+// Input stream operator (you can implement logic here if needed)
+std::istream& operator>>(std::istream& in, TicTacToe& game) {
+    // Implement input logic if needed (e.g., read move or player)
+    return in;
 }

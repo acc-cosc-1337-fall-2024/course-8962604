@@ -14,6 +14,7 @@ public:
     std::string get_winner() const;
     std::string get_player() const;
     void display_board() const;
+    friend std::ostream& operator<<(std::ostream& os, const TicTacToe& game);
 
 private:
     void set_next_player();
@@ -23,10 +24,13 @@ private:
     bool check_column_win() const;
     bool check_diagonal_win() const;
     void set_winner();
+    char board[3][3];
 
     std::string player; // Current player: X or O
     std::vector<std::string> pegs; // TicTacToe board
     std::string winner; // Winner of the game: X, O or C (for a tie)
+
+    
 };
 
 #endif // TIC_TAC_TOE_H
