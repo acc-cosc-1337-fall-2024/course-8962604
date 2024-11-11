@@ -15,7 +15,7 @@ int main()
 	Account account; //object/instance(variable)
 	display_balance(account);
 	cout<<"Main: "<<account.get_balance()<<"\n";
-
+	cout<<account.get_bank_balance()<<"\n";
 	auto account_index = 0;
 	vector<account> accounts {CheckingAccount(), SavingsAccount()};
 	cout<<"1-Checking, 2-Savings";
@@ -32,6 +32,8 @@ int main()
 	atm.display_balance();
 
 	std::cout<<account.get_balance()<<"\n";
+	cout<<account.get_bank_balance()<<"\n";
+	account[1].get_bank_balance;
 
 	vector<Account> accounts;
 	auto balance = 0;
