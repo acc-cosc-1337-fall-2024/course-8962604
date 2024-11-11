@@ -2,6 +2,7 @@
 #include "catch.hpp"
 #include "bank_account.h"
 #include "checking_account.h"
+#include "savings_account.h"
 #include <ctime>
 
 TEST_CASE("Verify Test Configuration", "verification") {
@@ -9,7 +10,7 @@ TEST_CASE("Verify Test Configuration", "verification") {
 }
 TEST_CASE("Test checking Account get balance")
 {
-	
+	srand(time(0));
 	CheckingAccount account; 
 
 	REQUIRE(account.get_balance() >= 1);
@@ -21,6 +22,14 @@ TEST_CASE("Test checking account 1 param constructor")
 
 	REQUIRE(500 == account.get_balance());
 
+}
+TEST_CASE("Test savings Account get balance")
+{
+	srand(time(0));
+	SavingsAccount account; 
+
+	REQUIRE(account.get_balance() >= 1);
+	REQUIRE(account.get_balance() <= 10000);
 }
 TEST_CASE("Test account deposit w 1 default contructor")
 {

@@ -11,6 +11,8 @@ public:
     int get_balance()const{return balance;}//inline
     void deposit(int amount);
     void withdraw(int amount);
+protected:
+    int some_function(){}
 //by default all functions/variables are private
 private: //access specifier
     int balance;
