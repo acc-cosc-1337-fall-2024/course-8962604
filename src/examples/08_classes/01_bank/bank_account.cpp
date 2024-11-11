@@ -28,3 +28,8 @@ void display_balance(Account& Account)
     cout<<"friend function: "<<account.balance<<"\n";
     
 }
+Account get_account_by_value()
+{
+    Account account;
+    return account;
+}

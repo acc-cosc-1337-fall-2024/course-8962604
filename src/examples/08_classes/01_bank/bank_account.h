@@ -18,3 +18,5 @@ private: //access specifier
     int balance;
     void get_balance_from_db();
 };
+//Free functions - not part of the class
+Account get_account_by_value();

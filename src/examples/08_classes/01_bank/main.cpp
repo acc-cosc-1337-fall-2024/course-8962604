@@ -6,7 +6,9 @@ using std::vector;
 
 int main()
 
+	
 {
+	Account account = get_account_by_value();
 	Account account; //object/instance(variable)
 	display_balance(account);
 	cout<<"Main: "<<account.get_balance()<<"\n";
