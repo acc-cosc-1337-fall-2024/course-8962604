@@ -33,3 +33,8 @@ Account get_account_by_value()
     Account account;
     return account;
 }
+Account& get_account_by_reference()
+{
+    Account account;
+    return account;
+}
