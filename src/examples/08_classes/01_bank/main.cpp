@@ -1,4 +1,6 @@
 #include "bank_account.h"
+#include "checking_account.h"
+#include "savings_account.h"
 #include<vector>
 
 using std::cin; using std::cout;
@@ -8,12 +10,30 @@ int main()
 
 	
 {
+	
 	Account account = get_account_by_value();
 	Account account; //object/instance(variable)
 	display_balance(account);
 	cout<<"Main: "<<account.get_balance()<<"\n";
 
-	/*vector<Account> accounts;
+	auto account_index = 0;
+	vector<account> accounts {CheckingAccount(), SavingsAccount()};
+	cout<<"1-Checking, 2-Savings";
+	cin>>account_index;
+	Account accounts = accounts[account_index - 1 ]
+	Account account(1000);
+	ATM atm(account);
+	atm.display_balance();
+
+	atm.make_deposit();
+	atm.display_balance();
+
+	atm.make_withdraw();
+	atm.display_balance();
+
+	std::cout<<account.get_balance()<<"\n";
+
+	vector<Account> accounts;
 	auto balance = 0;
 	cout<<"Enter an amount: ";
 	cin>>balance;
@@ -30,7 +50,7 @@ int main()
 	
 	for (auto account: accounts)
 	{
-	cout<<account.get_balance()<<"\n";*/
+	cout<<account.get_balance()<<"\n";
 	}
 	return 0;
 }
