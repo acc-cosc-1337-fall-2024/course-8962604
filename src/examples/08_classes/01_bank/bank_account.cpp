@@ -1,6 +1,7 @@
 //bank_account.cpp
 # include "bank_account.h"
 #include<ctime> // guarauntees a random number
+using std::cout;
 
 void Account::get_balance_from_db()
 {
@@ -19,4 +20,11 @@ void Account::withdraw(int amount)
     {
         balance -= amount;
     }
+}
+// Free functions - nor part of the class
+void display_balance(Account Account)
+{
+    account.balance = 0;
+    cout<<"friend function: "<<account.balance<<"\n";
+    
 }

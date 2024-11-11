@@ -7,7 +7,11 @@ using std::vector;
 int main()
 
 {
-	vector<Account> accounts;
+	Account account; //object/instance(variable)
+	display_balance(account);
+	cout<<"Main: "<<account.get_balance()<<"\n";
+
+	/*vector<Account> accounts;
 	auto balance = 0;
 	cout<<"Enter an amount: ";
 	cin>>balance;
@@ -24,7 +28,7 @@ int main()
 	
 	for (auto account: accounts)
 	{
-	cout<<account.get_balance()<<"\n";
+	cout<<account.get_balance()<<"\n";*/
 	}
 	return 0;
 }

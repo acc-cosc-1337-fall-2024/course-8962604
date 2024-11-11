@@ -4,6 +4,7 @@
 //bank_account.h
 class Account
 {
+friend void display_balance(Account Account);
 public:
     Account(){balance += 100; std::cout<<"Default contructor\n";get_balance_from_db(); }//default constrctor - does nothing
     Account(int b) : balance(b){std::cout<<"constructor with one param\n";}//constructor
