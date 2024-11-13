@@ -5,15 +5,19 @@
 #include<memory>
 
 using std::cin; using std::cout;
-using std::vector; using std::unique_ptr; using std::make_unique;
+using std::vector; using std::shared_ptr; using std::make_shared;
 
 int main()
 
 	
 {
 
-	unique_ptr<int> num = make_unique<int>(10);
-	cout<<*num<<"\n";
+	shared_ptr<int> num_sp1 = make_shared<int>(10);
+	cout<<*num_sp1<<"\n";
+	cout<<num_sp1.use_count()<<"\n";
+	shared_ptr<int> num_sp2 = num_sp1;
+	cout<<*num_sp2<<"\n";
+	cout<<num_sp2.use_count()<<"\n";
 	
 	/*Account account = get_account_by_value();
 	Account account; //object/instance(variable)
