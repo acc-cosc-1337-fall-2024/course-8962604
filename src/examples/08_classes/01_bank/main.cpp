@@ -5,22 +5,18 @@
 #include<memory>
 
 using std::cin; using std::cout;
-using std::vector; using std::shared_ptr; using std::make_shared;
-using std::weak_ptr;
+using std::vector; using std::unique_ptr; using std::make_unique;
 
 int main()
 
 	
 {
 
-	shared_ptr<int> num_sp1 = make_shared<int>(10);
-	weak_ptr<int> num_wp = num_sp1;
-	cout<<*num_wp.lock()<<"\n";
-
-	if(!num_wp.expired())
-	{
-		cout<<*num_sp1;
-	}
+	
+	unique_ptr<Account> savings = make_unique<SavingsAccount>();
+	cout<<savings->get_balance()<<"\n";
+	unique_ptr<Account> checkings = make_unique<CheckingsAccount>();
+	cout<<savings->get_balance()<<"\n";
 	
 	/*Account account = get_account_by_value();
 	Account account; //object/instance(variable)
