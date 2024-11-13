@@ -6,6 +6,7 @@
 
 using std::cin; using std::cout;
 using std::vector; using std::shared_ptr; using std::make_shared;
+using std::weak_ptr;
 
 int main()
 
@@ -13,11 +14,13 @@ int main()
 {
 
 	shared_ptr<int> num_sp1 = make_shared<int>(10);
-	cout<<*num_sp1<<"\n";
-	cout<<num_sp1.use_count()<<"\n";
-	shared_ptr<int> num_sp2 = num_sp1;
-	cout<<*num_sp2<<"\n";
-	cout<<num_sp2.use_count()<<"\n";
+	weak_ptr<int> num_wp = num_sp1;
+	cout<<*num_wp.lock()<<"\n";
+
+	if(!num_wp.expired())
+	{
+		cout<<*num_sp1;
+	}
 	
 	/*Account account = get_account_by_value();
 	Account account; //object/instance(variable)
