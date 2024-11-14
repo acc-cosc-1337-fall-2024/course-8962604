@@ -1,24 +1,46 @@
+#include<iostream>
 #include "bank_account.h"
 #include "checking_account.h"
 #include "savings_account.h"
 #include<vector>
 #include<memory>
 
-using std::cin; using std::cout;
+using std::cout; using std::cin;
 using std::vector; using std::unique_ptr; using std::make_unique;
 
 int main()
 
 	
 {
+	auto account_index = 0;
+	vector<unique_ptr><Account> accounts;
+	accounts.push_back(make_unique<CheckingsAccount>());
+	accounts.push_back(make_unique<SavingsAccount>());
 
-	
-	unique_ptr<Account> savings = make_unique<SavingsAccount>();
-	cout<<savings->get_balance()<<"\n";
-	unique_ptr<Account> checkings = make_unique<CheckingsAccount>();
-	cout<<savings->get_balance()<<"\n";
-	
-	/*Account account = get_account_by_value();
+	cout<<account[0]->get.balance()<<"\n";
+	cout<<account[1]->get.balance()<<"\n";
+
+	display_menu();
+	cout<<"Enter menu choice: ";
+	cin>>account_index;
+	auto* account = account[account_index - 1].get();
+
+	void display_menu()
+	{
+		cout<<"Acc checking:";
+		cout<<"Deposit:";
+		cout<<"Withdrawal:";
+		cout<<"Balance:";
+		cout<<"Exit";
+	}
+	void handle_menu_options(ATM& atm, int menu_choice)
+	{	switch()
+		{
+
+		}
+	}
+
+	Account account = get_account_by_value();
 	Account account; //object/instance(variable)
 	display_balance(account);
 	cout<<"Main: "<<account.get_balance()<<"\n";
@@ -61,5 +83,5 @@ int main()
 	{
 	cout<<account.get_balance()<<"\n";
 	}
-	return 0;*/
+	return 0;
 }

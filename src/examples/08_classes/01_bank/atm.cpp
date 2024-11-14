@@ -1,6 +1,7 @@
 //atm.cpp
 # include "atm.h"
 using std::cout; using std::cin;
+using std::unique_ptr; using std::
 void ATM::display_balance()
 {
     cout<<"Balance:"<<account.get_balance()<<"\n";
