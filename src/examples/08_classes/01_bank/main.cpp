@@ -5,7 +5,7 @@
 #include<vector>
 #include<memory>
 
-using std::cout; using std::cin;
+using std::cin; using std::cout;
 using std::vector; using std::unique_ptr; using std::make_unique;
 
 int main()
