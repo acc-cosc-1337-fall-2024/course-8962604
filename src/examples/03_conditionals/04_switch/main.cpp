@@ -10,7 +10,7 @@ int main()
     int option;
     cout<<"Enter Option:";
     cin>>option;
-    string option_result = menu_option(option);
+    string option_result = menu_options(option);
     cout<<option_result<<"\n";
     return 0;
 
