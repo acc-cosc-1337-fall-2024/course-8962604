@@ -10,7 +10,7 @@
 //return 'Invalid Option' otherwise
 using std::string;
 
-enum menu_option {customers = 1, payables, receivables, exit};
+enum menu_options{customers = 1, payables, receivables, exit};
 
 std::string menu_options(int num)
 
