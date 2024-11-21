@@ -13,7 +13,7 @@ int sum_of_squares_for(int num)
 {
     auto total = 0;
 
-    for(auto i = 0; i <= num; i++);
+    for(auto i = 0; i <= num; i++)
     {
         total += i * i;
     }
@@ -35,10 +35,10 @@ RESULT:
 void nested_for_loop()
 {
     auto const NUM = 3;
-    for (auto i=0; i < NUM; i++);
+    for (auto i=0; i < NUM; i++)
     {
         cout<<"Outer loop\n";
-        for(auto j=0; j < NUM; j++);
+        for(auto j=0; j < NUM; j++)
         {
             cout<<"\tInner Loop\n";
         }
@@ -46,9 +46,9 @@ void nested_for_loop()
 }
 void for_multiplication(const int rows, const int cols)
 {
-    for(auto i = 0; i < rows, i++);
+    for(auto i = 0; i < rows, i++)
     {
-        for(auto j = 0; j < cols; j++);
+        for(auto j = 0; j < cols; j++)
         {
             cout<<setw(4)<<(i + 1) * (j + 1);
         }

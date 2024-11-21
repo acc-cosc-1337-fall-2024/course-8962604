@@ -18,6 +18,7 @@ int main()
 
 	//write code to display balances
 
+	use_dynamic_memory_array(3);
 	   
 	return 0;
 }

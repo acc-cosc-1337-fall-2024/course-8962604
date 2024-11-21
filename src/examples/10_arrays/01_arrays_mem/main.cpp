@@ -3,7 +3,10 @@
 int main() 
 {
 
-	arrays_and_pointers();
+	const int SIZE = 3;
+    int nums[SIZE]{6, 1, 10};
+
+	arrays_and_pointers(nums, SIZE);
 
 	return 0;
 
